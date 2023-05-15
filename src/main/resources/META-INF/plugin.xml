@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.ssup.packagegenerator</id>
+    <name>PackageGenerator</name>
+    <vendor email="axil.ishan3@gmail.com" url="https://ssup.co">Ishan Khandelwal</vendor>
+    <description>Generates packages and files for your project through YAML</description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij"/>
+    <actions>
+        <action id="com.ssup.packagegenerator.action.CreatePackagesAction"
+                class="com.ssup.packagegenerator.action.CreatePackagesAction"
+                text="Generate Packages"
+                description="Generate architectural boilerplate packages for your modules"
+                icon="AllIcons.Actions.AddFile">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
